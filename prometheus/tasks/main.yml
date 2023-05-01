@@ -1,0 +1,7 @@
+
+---
+- include: create_user.yml
+- include: install.yml
+- include: configure.yml
+- include: prometheus_status.yml
+# tasks file for prometheus
