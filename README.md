@@ -23,3 +23,14 @@ They can also be installed and managed via Ansible Galaxy, a repository of commu
 · Standardization: Roles provide a standardized approach to configuring infrastructure, making it easier to maintain consistency and avoid configuration drift.
 
 · Scalability: Roles can be scaled to manage large and complex environments, allowing for automated management of infrastructure at scale.
+
+I had setup Prometheus and Grafana on an EC2 Instance in AWS, First make sure that you have ansible and git installed on your EC2 instance.
+
+These are the only 2 commands you need to setup Prometheus and Grafana using Ansible-roles:
+
+```
+ansible-galaxy init prometheus
+ansible-galaxy init grafana
+```
+
+And then create a sample playbook in that directory by including the above 2 roles of prometheus and grafana.
