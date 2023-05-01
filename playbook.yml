@@ -3,5 +3,6 @@
   hosts: localhost 
   become: true
   roles:
+   - prometheus
    - grafana
   
